@@ -1,0 +1,604 @@
+/*
+Theme Name:  Storefront Halloween
+Theme URI:   https://wordpress.org/themes/storefront-halloween/
+Description: Halloween child-theme for Storefront.
+Author:      Sébastien Dumont
+Author URI:  https://sebastiendumont.com
+Template:    storefront
+Version:     1.0.1
+License:     GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:        light, dark, orange, two-columns, right-sidebar, left-sidebar, responsive-layout, accessibility-ready
+Text Domain: storefront-halloween
+*/
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: Nunito;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Nunito;
+	font-weight: 700;
+}
+
+body {
+	font-size:18px;
+	letter-spacing:0px;
+	line-height:25px;
+	font-style:normal;
+	font-weight:400;
+	text-decoration:none;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:0px;
+	padding-right:0px;
+	color:#3a3a3a;
+	border-width:1px;
+	border-radius:0px;
+	border-style:none;
+	border-color:#3a3a3a;
+	background-color:#d54e21;
+}
+
+/* Header */
+.site-branding {
+	font-size: 22px;
+	font-family: inherit;
+	letter-spacing: 0px;
+	line-height: 22px;
+	font-style: normal;
+	font-weight: 400;
+	text-decoration: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	color: #ffffff;
+	border-width: 1px;
+	border-radius: 0px;
+	border-style: none;
+	border-color: #ffffff;
+}
+
+.site-branding .site-title {
+	font-size: 2em;
+	letter-spacing: -1px;
+	margin: 0;
+}
+
+.site-branding .site-title a {
+	font-weight: 700;
+}
+
+body.home .site-header {
+	margin-bottom: 0 !important;
+}
+
+/* Primary Navigation */
+.primary-navigation {
+	font-size: 16px;
+	letter-spacing: 0px;
+	line-height: 25px;
+	font-style: normal;
+	font-weight: 400;
+	color: rgb(255, 255, 255);
+	font-family: inherit;
+	cursor: auto;
+}
+
+.main-navigation ul li a {
+	font-size: 16px;
+	font-family: inherit;
+	letter-spacing: 0px;
+	line-height: 24px;
+	font-style: normal;
+	font-weight: 400;
+	text-decoration: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 26px;
+	padding-bottom: 26px;
+	padding-left: 18px;
+	padding-right: 18px;
+	color: #ffffff;
+	border-width: 1px;
+	border-radius: 0px;
+	border-style: none;
+	border-color: #ffffff;
+}
+
+/* Footer */
+.site-footer {
+	font-size: 18px;
+	font-family: inherit;
+	letter-spacing: 0px;
+	line-height: 20px;
+	font-style: normal;
+	font-weight: 400;
+	text-decoration: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 20px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	color: #444444;
+	border-width: 1px;
+	border-radius: 0px;
+	border-style: none;
+	background-color: #f0f0f0;
+}
+
+.footer-widgets .widget{
+	font-size:16px;
+	font-family:inherit;
+	letter-spacing:0px;
+	line-height:20px;
+	font-style:normal;
+	font-weight:400;
+	text-decoration:none;
+	margin-top:0px;
+	margin-bottom:20px;
+	margin-left:0px;
+	margin-right:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:0px;
+	padding-right:0px;
+	color:#444444;
+	border-width:1px;
+	border-radius:0px;
+	border-style:none;
+}
+
+.widget_nav_menu ul li::before {
+	content: none;
+}
+
+/* Social Menu */
+.secondary-navigation a[href*="dribbble.com"],
+.secondary-navigation a[href*="facebook.com"],
+.secondary-navigation a[href*="flickr.com"],
+.secondary-navigation a[href*="foursquare.com"],
+.secondary-navigation a[href*="plus.google.com"],
+.secondary-navigation a[href*="instagram.com"],
+.secondary-navigation a[href*="linkedin.com"],
+.secondary-navigation a[href*="pinterest.com"],
+.secondary-navigation a[href*="reddit.com"],
+.secondary-navigation a[href*="tumblr.com"],
+.secondary-navigation a[href*="twitter.com"],
+.secondary-navigation a[href*="vimeo.com"],
+.secondary-navigation a[href*="wordpress.com"],
+.secondary-navigation a[href*="wordpress.org"],
+.secondary-navigation a[href*="youtube.com"],
+.secondary-navigation a[href*="mailto:"],
+.secondary-navigation a[href*="twitch.tv"],
+.secondary-navigation a[href$="/feed/"] {
+  text-indent: -9999px;
+}
+.secondary-navigation a[href*="dribbble.com"]:after,
+.secondary-navigation a[href*="facebook.com"]:after,
+.secondary-navigation a[href*="flickr.com"]:after,
+.secondary-navigation a[href*="foursquare.com"]:after,
+.secondary-navigation a[href*="plus.google.com"]:after,
+.secondary-navigation a[href*="instagram.com"]:after,
+.secondary-navigation a[href*="linkedin.com"]:after,
+.secondary-navigation a[href*="pinterest.com"]:after,
+.secondary-navigation a[href*="reddit.com"]:after,
+.secondary-navigation a[href*="tumblr.com"]:after,
+.secondary-navigation a[href*="twitter.com"]:after,
+.secondary-navigation a[href*="vimeo.com"]:after,
+.secondary-navigation a[href*="wordpress.com"]:after,
+.secondary-navigation a[href*="wordpress.org"]:after,
+.secondary-navigation a[href*="youtube.com"]:after,
+.secondary-navigation a[href*="mailto:"]:after,
+.secondary-navigation a[href*="twitch.tv"]:after,
+.secondary-navigation a[href$="/feed/"]:after {
+  font-family: "FontAwesome";
+  text-indent: 0;
+  display: block;
+  float: left;
+}
+.secondary-navigation a[href$="/feed/"]:after {
+  content: "\f09e";
+  color: #ff9900;
+}
+.secondary-navigation a[href*="twitch.tv"]:after {
+  content: "\f1e8";
+  color: #6441A5;
+}
+.secondary-navigation a[href*="mailto:"]:after {
+  content: "\f003";
+}
+.secondary-navigation a[href*="youtube.com"]:after {
+  content: "\f167";
+  color: #bb0000;
+}
+.secondary-navigation a[href*="wordpress.com"]:after,
+.secondary-navigation a[href*="wordpress.org"]:after {
+  content: "\f19a";
+  color: #0073aa;
+}
+.secondary-navigation a[href*="vimeo.com"]:after {
+  content: "\f194";
+  color: #aad450;
+}
+.secondary-navigation a[href*="tumblr.com"]:after {
+  content: "\f173";
+  color: #32506d;
+}
+.secondary-navigation a[href*="reddit.com"]:after {
+  content: "\f231";
+}
+.secondary-navigation a[href*="twitter.com"]:after {
+  content: "\f099";
+  color: #00aced;
+}
+.secondary-navigation a[href*="dribbble.com"]:after {
+  content: "\f17d";
+  color: #ea4c89;
+}
+.secondary-navigation a[href*="facebook.com"]:after {
+  content: "\f09a";
+  color: #3b5998;
+}
+.secondary-navigation a[href*="flickr.com"]:after {
+  content: "\f16e";
+  color: #ff0084;
+}
+.secondary-navigation a[href*="foursquare.com"]:after {
+  content: "\f180";
+  color: #0072b1;
+}
+.secondary-navigation a[href*="plus.google.com"]:after {
+  content: "\f0d5";
+  color: #dd4b39; }
+.secondary-navigation a[href*="instagram.com"]:after {
+  content: "\f16d";
+  color: #517fa4;
+}
+.secondary-navigation a[href*="linkedin.com"]:after {
+  content: "\f0e1";
+  color: #007bb6;
+}
+.secondary-navigation a[href*="pinterest.com"]:after {
+  content: "\f231";
+  color: #cb2027;
+}
+
+/* WooCommerce */
+a.cart-contents,
+.site-header-cart .widget_shopping_cart a {
+	color: #ffffff;
+}
+
+table.cart td.product-remove,
+table.cart td.actions {
+	border-top-color: #fcfcfc;
+}
+
+.woocommerce-tabs ul.tabs li.active a,
+ul.products li.product .price,
+.onsale,
+.widget_search form:before,
+.widget_product_search form:before {
+	color: #3a3a3a;
+}
+
+.woocommerce-breadcrumb a,
+a.woocommerce-review-link,
+.product_meta a {
+	color: #6c6c6c;
+}
+
+.onsale {
+	border-color: #3a3a3a;
+}
+
+.star-rating span:before,
+.quantity .plus, .quantity .minus,
+p.stars a:hover:after,
+p.stars a:after,
+.star-rating span:before,
+#payment .payment_methods li input[type=radio]:first-child:checked+label:before {
+	color: #dd8b0f;
+}
+
+.widget_price_filter .ui-slider .ui-slider-range,
+.widget_price_filter .ui-slider .ui-slider-handle {
+	background-color: #dd8b0f;
+}
+
+.order_details {
+	background-color: #f5f5f5;
+}
+
+.order_details > li {
+	border-bottom: 1px dotted #e0e0e0;
+}
+
+.order_details:before,
+.order_details:after {
+	background: -webkit-linear-gradient(transparent 0,transparent 0),-webkit-linear-gradient(135deg,#f5f5f5 33.33%,transparent 33.33%),-webkit-linear-gradient(45deg,#f5f5f5 33.33%,transparent 33.33%)
+}
+
+p.stars a:before,
+p.stars a:hover~a:before,
+p.stars.selected a.active~a:before {
+	color: #3a3a3a;
+}
+
+p.stars.selected a.active:before,
+p.stars:hover a:before,
+p.stars.selected a:not(.active):before,
+p.stars.selected a.active:before {
+	color: #dd8b0f;
+}
+
+.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
+	background-color: #dd8b0f;
+	color: #ffffff;
+}
+
+.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger:hover {
+	background-color: #c47200;
+	border-color: #c47200;
+	color: #ffffff;
+}
+
+.button.loading {
+	color: #dd8b0f;
+}
+
+.button.loading:hover {
+	background-color: #dd8b0f;
+}
+
+.button.loading:after {
+	color: #ffffff;
+}
+
+@media screen and ( min-width: 768px ) {
+	.site-header-cart .widget_shopping_cart,
+	.site-header .product_list_widget li .quantity {
+		color: #ffffff;
+	}
+}
+
+/* Halloween Special */
+body.halloween {
+	background-color: #000;
+}
+
+body.halloween a,
+body.halloween .site-footer a:not(.button) {
+	color: #f37d0e;
+}
+
+body.halloween .site-header {
+	background-color: #000;
+	border-bottom-color: #180702;
+}
+
+body.halloween .site-branding h1 a {
+	color: #f37d0e;
+}
+
+body.halloween .secondary-navigation a[href*="dribbble.com"]:after,
+body.halloween .secondary-navigation a[href*="facebook.com"]:after,
+body.halloween .secondary-navigation a[href*="flickr.com"]:after,
+body.halloween .secondary-navigation a[href*="foursquare.com"]:after,
+body.halloween .secondary-navigation a[href*="plus.google.com"]:after,
+body.halloween .secondary-navigation a[href*="instagram.com"]:after,
+body.halloween .secondary-navigation a[href*="linkedin.com"]:after,
+body.halloween .secondary-navigation a[href*="pinterest.com"]:after,
+body.halloween .secondary-navigation a[href*="reddit.com"]:after,
+body.halloween .secondary-navigation a[href*="tumblr.com"]:after,
+body.halloween .secondary-navigation a[href*="twitter.com"]:after,
+body.halloween .secondary-navigation a[href*="vimeo.com"]:after,
+body.halloween .secondary-navigation a[href*="wordpress.com"]:after,
+body.halloween .secondary-navigation a[href*="wordpress.org"]:after,
+body.halloween .secondary-navigation a[href*="youtube.com"]:after,
+body.halloween .secondary-navigation a[href*="mailto:"]:after,
+body.halloween .secondary-navigation a[href*="twitch.tv"]:after,
+body.halloween .secondary-navigation a[href$="/feed/"]:after {
+	color: #f37d0e;
+}
+
+body.halloween .menu-item.avatar-item {
+	border: 2px solid #f37d0e;
+}
+
+body.halloween .site-header-cart .widget_shopping_cart,
+body.halloween .main-navigation ul.menu ul.sub-menu,
+body.halloween .main-navigation ul.nav-menu ul.children {
+	background-color: #f37d0e;
+	border: 1px solid #000;
+}
+
+@media screen and ( min-width: 768px ) {
+	body.halloween .site-header-cart .widget_shopping_cart .buttons,
+	body.halloween .site-header-cart .widget_shopping_cart .total {
+		background-color: #000;
+	}
+}
+
+body.halloween .main-navigation ul.nav-menu ul li:hover > a {
+	background-color: rgba(0,0,0,.8);
+}
+
+body.halloween .main-navigation ul li a:hover,
+body.halloween .main-navigation ul li:hover > a,
+body.halloween .site-title a:hover,
+body.halloween a.cart-contents:hover,
+body.halloween .site-header-cart .widget_shopping_cart a:hover,
+body.halloween .site-header-cart:hover > li > a,
+body.halloween .site-header ul.menu li.current-menu-item > a {
+	color: #f37d0e !important;
+}
+
+body.halloween .header-banner {
+	background-color: #f37d0e;
+	border-bottom: 1px solid #b6411a;
+	color: #000;
+}
+
+body.halloween .header-banner a {
+	color: #fff;
+}
+
+body.halloween .site-footer {
+	background-color: #151414;
+}
+
+body.halloween input[type="search"] {
+	background-color: #f37d0e;
+	border: 2px solid #f37d0e;
+	color: #fff;
+	box-shadow: none;
+}
+
+body.halloween button.alt,
+body.halloween input[type="button"].alt,
+body.halloween input[type="reset"].alt,
+body.halloween input[type="submit"].alt,
+body.halloween .button.alt,
+body.halloween .added_to_cart.alt,
+body.halloween .widget a.button.alt,
+body.halloween .site-header-cart .widget_shopping_cart a.button.alt,
+body.halloween button:hover,
+body.halloween input[type="button"]:hover,
+body.halloween input[type="reset"]:hover,
+body.halloween input[type="submit"]:hover,
+body.halloween .button:hover,
+body.halloween .added_to_cart:hover,
+body.halloween .widget-area .widget a.button:hover,
+body.halloween .added_to_cart:hover,
+body.halloween .widget a.button.checkout:hover {
+	background-color: #000 !important;
+	border: 2px solid #f37d0e !important;
+	color: #fff !important;
+}
+
+body.halloween button,
+body.halloween input[type="button"],
+body.halloween input[type="reset"],
+body.halloween input[type="submit"],
+body.halloween .button,
+body.halloween .added_to_cart,
+body.halloween .widget a.button,
+body.halloween .site-header-cart .widget_shopping_cart a.button,
+body.halloween button.alt:hover,
+body.halloween input[type="button"].alt:hover,
+body.halloween input[type="reset"].alt:hover,
+body.halloween input[type="submit"].alt:hover,
+body.halloween .button.alt:hover,
+body.halloween .added_to_cart.alt:hover,
+body.halloween .widget a.button.alt:hover,
+body.halloween .site-header-cart .widget_shopping_cart a.button.alt:hover {
+	background-color: #f37d0e !important;
+	border: 2px solid #f37d0e !important;
+	color: #fff !important;
+}
+
+body.halloween .onsale {
+	border-color: #f37d0e;
+}
+
+body.halloween .woocommerce-tabs ul.tabs li.active a,
+body.halloween ul.products li.product .price,
+body.halloween ul.products li.product .woocommerce-loop-product__title,
+body.halloween ul.products li.product h2, ul.products li.product h3,
+body.halloween .onsale,
+body.halloween .widget_search form::before,
+body.halloween .widget_product_search form::before {
+	color: #f37d0e;
+}
+
+body.halloween .woocommerce-info,
+body.halloween .woocommerce-noreviews,
+body.halloween p.no-comments,
+body.halloween .demo_store {
+	background-color: #f37d0e !important;
+	color: #ffffff !important;
+}
+
+body.halloween a.woocommerce-store-notice__dismiss-link {
+	color: #fff !important;
+}
+
+/* Widgets */
+body.halloween .milestone-header {
+	background-color: #f37d0e;
+}
+
+body.halloween .widget_search form::before {
+	color: #fff;
+}
+
+body.halloween .widget-area .widget a,
+body.halloween .hentry .entry-header .posted-on a,
+body.halloween .hentry .entry-header .byline a {
+	color: #f37d0e;
+}
+
+/* My Account */
+body.halloween.woocommerce-page table tbody tr:nth-child(2n) td,
+body.halloween fieldset,
+body.halloween fieldset legend {
+	background-color: #000;
+}
+
+/* Cart and Checkout */
+body.halloween #order_review,
+body.halloween.woocommerce-page table th,
+body.halloween.woocommerce-page table tbody td,
+body.halloween #payment .payment_methods > li .payment_box,
+body.halloween #payment .payment_methods > li:not(.woocommerce-notice),
+body.halloween #payment .place-order {
+	background-color: #000;
+}
+
+/* WooCommerce/Storefront Cart Tab */
+body.halloween .woocommerce-cart-tab__contents {
+	background-color: #000;
+}
+
+body.halloween .woocommerce-cart-tab-container,
+body.halloween .woocommerce-cart-tab,
+body.halloween .woocommerce-cart-tab-container .widget_shopping_cart .widgettitle,
+body.halloween .woocommerce-cart-tab-container .widget_shopping_cart .buttons {
+	background-color: #f37d0e !important;
+}
+
+body.halloween .woocommerce-mini-cart__buttons a.button,
+body.halloween .woocommerce-mini-cart__buttons a.button.alt {
+	background-color: #000 !important;
+	border: 2px solid #fff !important;
+}
+
+body.halloween .woocommerce-mini-cart__buttons a.button:hover,
+body.halloween .woocommerce-mini-cart__buttons a.button.alt:hover {
+	border-color: #f37d0e !important;
+}

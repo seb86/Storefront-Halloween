@@ -1,0 +1,7 @@
+*** Storefront Halloween Theme Changelog ***
+
+28.10.2017 - version 1.0.1
+* Initial release
+
+28.10.2017 - version 1.0.0
+* Theme submitted
